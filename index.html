@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-TicketingBd</title>
+    <link rel="icon" image="x-icon" href="images/bus-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+        :root {
+            --primary-color: #1DD100;
+        }
+
+        .body {
+            font-family: "Geologica", sans-serif;
+            max-width: 1400px;
+        }
+
+        .active {
+            color: #1DD100;
+        }
+
+        .border1 {
+            border: 1px solid #1DD100;
+        }
+
+        .round-border {
+            border: 4px solid #1DD100CC;
+            border-radius: 50px;
+        }
+
+        .banner {
+            padding: 150px;
+            width: 100%;
+            background-image: url(images/banner.png);
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px 12px 12px 12px;
+        }
+
+        .border2 {
+            border-bottom: 5px solid #1DD100CC;
+        }
+
+        .border4 {
+            border: 4px solid #1DD100;
+            margin-left: 40px;
+            margin-right: 40px;
+            border-radius: 20px;
+        }
+
+        .hr-hr {
+            padding: 4px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="mx-auto">
+    <main class="body mx-auto">
+        <section>
+            <div class="flex justify-between p-4 items-center">
+                <h2 class=" text-5xl uppercase">Travel<span class="uppercase text-[#1DD100]/70 text-bold">bd</span></h2>
+                <div>
+                    <nav>
+                        <ul class="flex text-2xl gap-7 text-[gray]">
+                            <li class="active"><a href="">Home</a></li>
+                            <li class=""><a href="">About</a></li>
+                            <li class=""><a href="">Destination</a></li>
+                            <li class=""><a href="">Search</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <div class=" border1 p-3 bg-[#1DD100]/30 rounded-xl">
+                        <span class="text-4xl text-etra-bold text-black/90"> <i
+                                class="fa-solid fa-van-shuttle text-4xl text-[#390d0d]"></i> Bus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="banner mt-3 text-center mx-auto relative">
+                <h2 class="text-center text-7xl text-white mt-4">End-To-End Travel With</h2>
+                <h2 class="text-[var(--primary-color)] text-center text-7xl text-bold mt-10">Travel-Bd</h2>
+                <p class="text-2xl text-white text-bold mt-5 text-center pt-2">Yes, you can run unit tests and view the
+                    results directly within the app. <br> The integrated testing features allow for a streamlined <span
+                        class="text-[var(--primary-color)] text-5xl">!</span></p>
+                <button id="buy-ticket"
+                    class=" text-3xl  bg-[var(--primary-color)] rounded-xl text-bold shadow mt-8 p-5 ">Buy-Ticket</button>
+            </div>
+            <div class="w-3/4  flex gap-12  justify-center  absolute -translate-y-12  -translate-x-3 pb-10">
+                <div class="flex p-4 gap-2 bg-white text-left  rounded-2xl items-center justify-center border2">
+                    <div><i class="fa-solid fa-users text-6xl"></i></div>
+                    <div class="p-1">
+                        <p class="text-4xl">500k+
+                            <br>
+                            <span class="text-2xl text-[gray]">Registered Users</span>
+
+                    </div>
+                </div>
+
+                <div class="flex p-5 gap-2 bg-white text-left rounded-2xl items-center border2">
+                    <div><i class="fa-solid fa-ticket text-6xl"></i></div>
+                    <div class="p-1">
+                        <p class="text-4xl">1.7Laks
+                            <br>
+                            <span class="text-2xl text-[gray]">Tickets Sold</span>
+
+                    </div>
+                </div>
+
+                <div class="flex p-4 gap-2 bg-white text-left rounded-2xl items-center border2">
+                    <div><i class="fa-solid fa-truck text-6xl"></i></div>
+                    <div class="p-1">
+                        <p class="text-4xl">80k+
+                            <br>
+                            <span class="text-2xl text-[gray]">Rental Partners</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h2 class="text-center text-5xl mt-40 mb-20 text-bold">Best Offers for You</h2>
+            <div class="flex gap-5 justify-center">
+                <div class="flex justify-center items-center rounded-xl">
+                    <div class="p-10 bg-yellow-400 rounded-xl borderRelative">
+                        <div class="bg-yellow-400">
+                            <h2 class="text-5xl">15% OFF</h2>
+                            <p>On Your Next Purchase</p>
+                            <p>Use Within january 2024</p>
+                        </div>
+                        <div class=" w-6 h- p-4 bg-[white] radius bordering2">
+
+                        </div>
+                        <div class=" w-6 h- p-4 bg-[white] radius bordering3">
+
+                        </div>
+                    </div>
+                    <div class="bg-yellow-400 rounded-xl bordering mr-5 p-14">
+                        <p class="text-4xl">New15</p>
+                        <p>Coupon Code</p>
+                    </div>
+
+                    <div class="flex justify-center items-center rounded-xl">
+                        <div class="p-10 bg-pink-400 rounded-xl borderRelative">
+                            <div class="bg-pink-400 ">
+                                <h2 class="text-5xl">20% OFF</h2>
+                                <p>On Your Next Purchase</p>
+                                <p>Use Within january 2024</p>
+                            </div>
+                            <div class=" w-6 h- p-4 bg-[white] radius bordering2">
+                            </div>
+                            <div class=" w-6 h- p-4 bg-[white] radius bordering3">
+
+                            </div>
+                        </div>
+                        <div class="bg-pink-400 rounded-xl bordering mr-5  p-14">
+                            <p class="text-4xl">Couple20</p>
+                            <p>Coupon Code</p>
+                        </div>
+                    </div>
+        </section>
+        <div class="text-center mt-10 mb-20">
+            <button class="btn boder">See ALL Offers</button>
+        </div>
+    </main>
+    <main class="bg-[#ddd]/100 p-10 border4">
+        <div class="text-center">
+            <h2 class="text-5xl mb-8"> <span class="text-[var(--primary-color)] text-bold">Green</span>-Line Paribahan
+            </h2>
+            <p class="text-2xl">Yes, you can run unit tests and view the results directly within the app. The integrated
+                <br> testing features allow for a streamlined .
+            </p>
+        </div>
+
+        <section>
+            <div class="flex justify-center items-center rounded-xl mt-16 ">
+                <div class=" p-5 bg-white rounded-xl borderRelative ">
+                    <div class="bg-white flex justify-betweeen items-center p-2">
+                        <div class="flex items-center mr-20">
+                            <div>
+                                <i class="fa-solid fa-van-shuttle text-5xl text-[var(--primary-color)]"></i>
+                            </div>
+                            <div class="text-left ml-2">
+                                <h2 class="text-2xl">Green-Line Paribahan</h2>
+                                <p class="ml-1  ">Coach-009-Web !Ac Business</p>
+
+                            </div>
+                        </div>
+                        <div class="flex  bg-[#1DD100]/20 p-2 rounded-xl ml-20 ">
+                            <img class="" src="images/seat-green.png" alt="">
+                            <h2 class="text-xl"><span class="text-xxl ml-1" id="seatInner">40</span> Seats Left</h2>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-[#ddd] rounded-xl">
+                        <div class="flex justify-between p-4 rounded-xl items-center">
+                            <p class="text-2xl">Route</p>
+                            <p class="text-2xl">Dhaka - Sylhet</p>
+                        </div>
+                        <hr class="hr-hr">
+                        <div class="flex justify-between p-4  rounded-xl items-center">
+                            <p class="text-2xl">Departure Time</p>
+                            <p class="text-2xl">9:00 PM</p>
+                        </div>
+                        <hr>
+                        <div class="flex justify-evenly mt-4 items-center">
+                            <div class="bg-slate-400 rounded-xl text-white p-2">
+                                <p>Boarding-Point-Laxmipur</p>
+                            </div>
+                            <div class="bg-slate-400 rounded-xl text-white p-2">
+                                <p>Dropping-Point-Bogra</p>
+                            </div>
+                            <div class="bg-slate-400 rounded-xl text-white p-2">
+                                <p>Est. Time-11Hrs</p>
+                            </div>
+                        </div>
+                        <div class=" w-10  p-4 bg-[#ddd] radius bordering-4">
+                        </div>
+                        <div class=" w-10  p-4 bg-[#ddd] radius bordering-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-24 bg-white text-center rounded-xl bordering-2">
+                    <div>
+                        <div class="flex justify-center p-5 items-center  "><img class="" src="images/fare.png" alt="">
+                        </div>
+                        <div class="">
+                            <h2 class="text-3xl pb-1">500Tk</h2>
+                            <p class="text-xl pb-2">Per Seat</p>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <main id="mains" class="flex p-5 items-center gap-10 justify-center mt-10 ">
+            <section class="mt-14 p-5 rounded-xl round-border bg-green-400">
+                <div class="p-3">
+                    <h2 class="text-3xl mb-4 text-white">Choose Your Seat</h2>
+                    <hr class="mb-4">
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <h2 class="text-xl ml-1 text-white">Available</h2>
+                        </div>
+                        <div class="flex"><img class="bg-gray-400 p-1 rounded-xl" src="images/seat-gray.png" alt="">
+                            <h2 class="text-xl ml-1 text-white">Selected</h2>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="flex justify-end p-5">
+                        <div>
+                            <div class="bg-[gray]/40 p-2 w-20 text-center rounded-xl"><i
+                                    class="fa-solid fa-circle-user text-2xl text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-20 justify-between p-5">
+                        <div class="flex gap-5 items-center ">
+                            <div>
+                                <h2 class="text-2xl text-white">A</h2>
+                            </div>
+                            <div 
+                                >
+                               <button class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl  text-white cursor-pointer" id="A1">A1</button></div>
+                            <div 
+                                >
+                                <button class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer" id="A2">A2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div 
+                                >
+                                <button id="A3" class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">A3</button>
+                            </div>
+                            <div 
+                                >
+                               <button id="A4" class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer"> A4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">B</h2>
+                            </div>
+                            <div >
+                               <button id="B1"
+                               class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">B1</button> 
+                            </div>
+                            <div >
+                               <button id="B2"
+                               class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">B2</button> 
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="B3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">B3</button>
+                            </div>
+                            <div >
+                                <button id="B4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">B4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">C</h2>
+                            </div>
+                            <div >
+                                <button id="C1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">C1</button>
+                            </div>
+                            <div >
+                                <button id="C2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">C2</button>
+                            </div>
+                            `
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="C3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">C3</button>
+                            </div>
+                            <div >
+                                <button id="C4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">C4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">D</h2>
+                            </div>
+                            <div >
+                                <button id="D1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">D1</button>
+                            </div>
+                            <div >
+                                <button id="D2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">D2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="D3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">D3</button>
+                            </div>
+                            <div >
+                                <button id="D4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">D4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">E</h2>
+                            </div>
+                            <div >
+                                <button id="E1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">E1</button>
+                            </div>
+                            <div >
+                               <button id="E2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer"> E2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="E3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">E3</button>
+                            </div>
+                            <div >
+                                <button id="E4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">E4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">F</h2>
+                            </div>
+                            <div >
+                                <button id="F1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">F1</button>
+                            </div>
+                            <div >
+                               <button id="F2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer"> F2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="F3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">F3</button>
+                            </div>
+                            <div >
+                                <button id="F4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">F4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">G</h2>
+                            </div>
+                            <div >
+                                <button id="G1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">G1</button>
+                            </div>
+                            <div >
+                                <button id="G2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">G2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="G3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">G3</button>
+                            </div>
+                            <div >
+                                <button id="G4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">G4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl text-white">H</h2>
+                            </div>
+                            <div >
+                                <button id="H1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">H1</button>
+                            </div>
+                            <div >
+                                <button id="H2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">H2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                               <button
+                                id="H3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">H3</button>
+                            </div>
+                            <div >
+                                <button id="H4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">H4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl mr-3 text-white">I</h2>
+                            </div>
+                            <div >
+                                <button id="I1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">I1</button>
+                            </div>
+                            <div >
+                                <button id="I2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">I2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="I3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">I3</button>
+                            </div>
+                            <div >
+                                <button id="I4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">I4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+
+                        <div class="flex gap-5 items-center">
+                            <div>
+                                <h2 class="text-2xl mr-3 text-white">J</h2>
+                            </div>
+                            <div >
+                                <button id="J1"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">J1</button>
+                            </div>
+                            <div>
+                                <button id="J2"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">J2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div >
+                                <button id="J3"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">J3</button>
+                            </div>
+                            <div >
+                                <button id="J4"
+                                class="bg-[gray]/40 p-2 w-20 text-center rounded-xl text-2xl text-white cursor-pointer">J4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+            <section id="sec-final" class="p-20 ">
+                <div>
+                    <div class="p-5 bg-green-400 mt-16 rounded-xl shadow-xl">
+                        <h2 class="mb-4 text-3xl text-left text-white">Proceed & Pay</h2>
+                        <hr>
+                        <div>
+                            <div class="flex justify-evenly items-center p-2">
+                                <div class="flex items-center">
+                                    <p class="text-2xl text-white">Seat
+                                    <sup id="seat-value" class="  text-red-700">0</sup></p>
+                                </div>
+                                <h2 class="text-2xl text-white">Class</h2>
+                                <h2 class="text-2xl text-white">Price</h2>
+                            </div>
+                            <hr>
+                            <div>
+                            <div class="flex justify-evenly p-3 ml-1 mr-1 items-center">
+                                <div class="text-2xl text-white" id="append-p1">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="flex justify-around itmes-center p-2">
+                                <h2 class="text-2xl text-white">Total Price</h2>
+                                <h2 class="text-2xl text-white" >BDT-><span id="scoreCard">0</span></BDT-></h2>
+                            </div>
+                        
+                        <div class="flex  justify-center items-center">
+                            <div class="text-center flex ml-10 mt-2 "> <input id="coupon"
+                                    class="w-auto p-3 rounded-xl outline-green-400 focus:text-green-400" type="text"
+                                    placeholder="Have Any Coupon?">
+                                <div><button id="apply" 
+                                        class="btn bg-slate-400 outline-none ml- ml-6 mr-5 hover:bg-[var(--primary-color)] text-white"
+                                        disabled>
+                                        Apply</button></div>
+                            </div>
+                            <div class="mr-5"> </div>
+                        </div>
+                        <div class="flex justify-around mt-4">
+                            <h2 class="text-2xl text-white">Payable</h2>
+                            <h2 class="text-2xl text-white">Total-> <span class="text-slate-400" id="after-discounted-total">0</span> Tk</h2>
+                        </div>
+                        <div class="text-left ">
+                            <h2 class="text-2xl mb-2 mt-8 ml-1 text-white">Passenger Name</h2>
+                            <input id="name" class="pr-60 p-5 rounded-xl outline-green-400 focus:text-green-400" type="text"
+                                placeholder="Your Name">
+                        </div>
+                        <div  id="never" class="text-left">
+                            <h2 class="text-2xl mb-2 mt-5 ml-1 text-white">Mobile Phone Number</h2>
+                            <input id="mobilEee" class="pr-60 p-5 rounded-xl outline-green-400 focus:text-green-400"  type="number"
+                                 placeholder="Your Phone Number">
+                        </div>
+                        <div class="text-left">
+                            <h2 class="text-2xl mb-2 mt-5 text-500 ml-1 text-white">Email Id</h2>
+                            <input id="email" class="pr-60  p-5 rounded-xl outline-green-400 focus:text-green-400" type="text"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="flex items-center justify-center  mt-5">
+                            <button id="next-button" class="btn  bg-slate-400 text-white text-2xl  hover:bg-[var(--primary-color)]  mt-5"
+                                disabled><a href="index2.html">Next</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-400 p-2 rounded-xl justify-around mt-5 flex">
+                    <a class="p-2 bg-slate-400 rounded-xl hover:bg-[var(--primary-color)] text-white" href="">Term &
+                        Conditions</a>
+                    <a class="p-2 bg-slate-400 rounded-xl hover:bg-[var(--primary-color)] text-white"
+                        href="">Cancellation Policy</a>
+                </div>
+            </section>
+        </main>
+    
+    <div class="p-20 bg-black mt-10 ">
+        <div class="flex justify-between  p-10">
+            <div>
+                <h2 class="text-green-400 mb-5 text-4xl">Green-Line Paribahan</h2>
+                <p class="text-white line-height-2">Digital-Ticketing is a digital way to manage your ticket on your
+                    hand by <br> just as quick as you never thinked berfore <span
+                        class="text-2xl text-green-400">!</span></p>
+            </div>
+            <div>
+                <h2 class="text-3xl text-white">Download Our App</h2>
+                <div class="p-5 bg-slate-400 flex justify-center rounded-xl mt-5"><a href="https://play.google.com/store/apps/details?id=com.bitla.mba.greenlinetoursntravels"><img
+                            src="images/playstore.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="p-10 flex justify-around bg-black">
+        <div>
+            <h2 class=" text-gray-600">&copy; All Rights Reserved By Dr Web 2024 Nov</h2>
+        </div>
+        <div class="flex gap-10">
+            <h2 class="text-xl text-white">Terms & Conditions</h2>
+            <h2 class="text-xl text-white">Return & Refund Policy</h2>
+            <h2 class="text-xl text-white">Privacy Policy</h2>
+        </div>
+    </div>
+</main>
+    <script src="javscript/main.js"></script>
+    <script src="javscript/functions.js"></script>
+    <script src="javscript/utility.js"></script>
+</body>
+
+</html>

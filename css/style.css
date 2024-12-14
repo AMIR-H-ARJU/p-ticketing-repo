@@ -1,0 +1,55 @@
+.radius {
+    border-radius: 50%;
+}
+
+.bordering {
+    border-left: 4px dotted white;
+}
+
+.borderRelative {
+    position: relative;
+}
+
+.bordering2 {
+    top: -12px;
+    right: -15px;
+    position: absolute;
+}
+
+.border2Relative {
+    position: relative;
+}
+
+.bordering3 {
+    bottom: -12px;
+    right: -15px;
+    position: absolute;
+}
+
+
+
+.rounded1 {
+    border-radius: 0px, 10px, 10px, 0px;
+}
+
+.boder {
+    border: 2px solid #1DD1004B;
+}
+
+.bordering-5 {
+    bottom: -12px;
+    right: -20px;
+    position: absolute;
+}
+.bordering-4 {
+    top: -12px;
+    right: -20px;
+    position: absolute;
+}
+.bordering-2{
+    border-left: 4px dotted #1DD100;
+}
+
+.input-width{
+    width: 350px;
+}
